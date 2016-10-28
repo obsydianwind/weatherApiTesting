@@ -1,0 +1,8 @@
+
+<h2>Home</h2>
+<br /><br />
+<input ng-model="controller.search"
+       ng-model-options="{debounce:1000}"
+       ng-change="controller.fetch()" />
+
+<h1>{{"Today is: " + controller.forecast.weather[0].description}}</h1>
